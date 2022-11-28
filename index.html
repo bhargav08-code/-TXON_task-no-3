@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>To_Do</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <span class="material-symbols-outlined"> hourglass_empty </span>
+    </div>
+
+    <!-- main -->
+    <div class="parent">
+      <div class="container">
+        <h1>TO DO LIST</h1>
+        <div class="date">
+          <p class="dmy"></p>
+        </div>
+        <!-- new taks -->
+        <div id="newtask">
+          <input type="text" placeholder="Task to be done.." />
+          <button id="push">Add</button>
+        </div>
+        <!-- search-filter -->
+        <div class="search">
+          <input type="text" name="search" placeholder="Search......" />
+          <div id="search">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+        </div>
+        <!-- result-div-->
+        <div id="tasks"></div>
+      </div>
+    </div>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="App.js" async defer></script>
+  </body>
+</html>
